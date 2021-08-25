@@ -1,0 +1,18 @@
+$letra: 40px;
+$color: rgb(32, 19, 21);
+$estilo: Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+.fuente{
+    font-size: $letra/2;
+    &--formato{
+        margin: 2rem 0;
+    }
+}
+
+.complete{
+    color: $color;
+    font-family: $estilo
+}
+

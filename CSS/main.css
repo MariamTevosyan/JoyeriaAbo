@@ -1,0 +1,202 @@
+/*VARIABLES*/
+.articulo__sub {
+  background-color: #e8e8e4;
+}
+
+.articulo__sub--fonts {
+  margin-top: 50px;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.encabezado__h1 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.encabezado__h1--color {
+  color: brown;
+}
+
+.encabezado__p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.encabezado__p--color {
+  color: #669bbc;
+}
+
+.footer__formato {
+  text-align: center;
+}
+
+.footer__formato--color {
+  background: #926d6d;
+}
+
+.footer__formato li a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer__letras {
+  font-size: 10px;
+}
+
+.footer__letras--color {
+  color: white !important;
+}
+
+/*VARIABLES*/
+.subtitulo__formato {
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.subtitulo__formato--color {
+  color: black;
+  background-color: #fcd5ce;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
+/*VARIABLES ANILLOS*/
+.anillos__p {
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.anillos__p--color {
+  color: #6f1d1b;
+}
+
+/*VARIABLES LEYENDA*/
+.legend_estilo {
+  color: #3c6e71;
+}
+
+.legend_estilo--formato {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+
+.formulario__formato {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario__formato--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabla__estilo {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.tabla__estilo--border {
+  border-color: black;
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 200px;
+  height: 200px;
+  font-size: medium;
+}
+
+.fuente {
+  font-size: 20px;
+}
+
+.fuente--formato {
+  margin: 2rem 0;
+}
+
+.complete {
+  color: #201315;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formulario__fondo {
+  background-color: #003b36 !important;
+}
+
+.contactoNosotros {
+  background-color: #003b36 !important;
+}
+
+.contactoFooter {
+  background-color: #003b36 !important;
+}
+
+.titulo-oro {
+  color: #dda15e;
+}
+
+.titulo-brown {
+  color: #dda15e;
+}
+
+.titulo-azul {
+  color: #dda15e;
+}
+
+/*.titulo__paraffo{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.titulo__paraffo--color{
+    @extend .titulo__paraffo;
+    color: #dda15e;
+    
+}
+
+.titulo__paraffo--color1{
+    @extend .titulo__paraffo;
+    color: #dda15e;
+    
+}
+.titulo__paraffo--color2{
+    @extend .titulo__paraffo;
+    color: #dda15e;
+    
+}*/
+.estiloLeyenda1 {
+  font-size: 2rem !important;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.estiloLeyenda2 {
+  font-size: 1rem !important;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: black;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+$fondo: #003b36;
+$fondo2: #003b36;
+$fondo3: #003b36;
+
+
+@mixin fondo ($fondo, $section) {
+    @if ($section == "contactoFooter"){
+        background-color: $fondo !important;
+    }
+    @else if ($section == "contactoNosotros"){
+        background-color: $fondo2 !important; 
+    }
+    @else if ($section == "formulario__fondo"){
+        background-color: $fondo3 !important;
+    }
+}
+
+.formulario__fondo{
+    @include fondo ($fondo, "formulario__fondo");
+}
+
+.contactoNosotros{
+    @include fondo ($fondo, "contactoNosotros");
+}
+
+.contactoFooter{
+    @include fondo ($fondo, "contactoFooter");
+}
+

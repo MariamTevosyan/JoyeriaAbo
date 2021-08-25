@@ -1,0 +1,17 @@
+/*VARIABLES ANILLOS*/
+$colorsubanillo: #6f1d1b;
+
+
+
+.anillos__p{
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+    &--color
+        {
+            color: $colorsubanillo;
+        }
+}
+

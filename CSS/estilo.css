@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    margin: 20px 15px 15px 15px;
+}
+@font-face {
+    font-family: fuente;
+    src: url(../Fuentes/Chigoda.ttf);
+}
+.header{
+    grid-area: header;
+    height: 550px;
+    overflow: hidden;
+    background-image: url(../Images/fondomar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* GRID - Seccion articulos*/
+
+.gridCarusel{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 21px;
+    grid-template-areas: "item1 item2 item3 item4";                           
+    justify-content: center;
+    align-content: center;
+}
+
+.gridCarusel > div{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    grid-column: 2/3;
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 21px;
+    grid-template-areas: "item1 item2 item3 item4";                           
+    justify-content: center;
+    align-content: center;
+}
+
+.grid > div{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    
+    /*border: 1px solid black;
+    box-shadow: 2px 2px 2px rgb(109, 101, 101);*/
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+
+.item4{
+    grid-area: item4;
+}
+
+
+.imgProducto{
+    height: 200px;
+    width: 200px;
+    transition: transform 1.8s ease;
+}
+
+.grid .item1 .imgProducto:hover{
+    transform: scale(1.2);
+}
+
+.grid .item2 .imgProducto:hover{
+    transform: scale(1.2);
+}
+
+.grid .item3 .imgProducto:hover{
+    transform: scale(1.2);
+}
+
+.grid .item4 .imgProducto:hover{
+    transform: scale(1.2);
+}
+
+.grid .item5 .imgProducto:hover{
+    transform: scale(1.2);
+}
+
+.grid .item6 .imgProducto:hover{
+    transform: scale(1.2);
+}
+ 
+   .btnAnillos {
+    height: 70px;
+    padding: 10px;
+    width: 70px;
+    border: 4px dashed blue;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: inset 6px 6px 5px black;
+    opacity: 0.7;
+    transition: ease-in 0.5s;
+    cursor: pointer;
+}
+
+
+   .btnAnillos:hover{
+    box-shadow: inset 20px 20px 5px aqua ;
+    background-color: hotpink;
+    border: 2px solid rgb(196, 137, 116);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    color: red;
+} 
+
+/* QUERY MEDIA - SECCION DE ARTICULOS*/
+
+@media screen and (max-width: 576px){
+    .grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+        grid-template-areas: "item1"
+                             "item2" 
+                             "item3"
+                             "item4";
+        justify-content: center;
+        align-content: center;
+    }
+    
+}
+
+h1{
+    font-family: fuente;
+    font-size: 50px;
+    color: white;
+}
+h2{
+    color: darkgoldenrod;
+    font-style: italic;
+    font-size: 30px;
+    font-family: serif;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.negrita{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* COLORES */
+.colorGris{
+    color: darkslategrey;
+    font-weight: bold;
+}
+
+.colorMarron{
+    color: darkred;
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+
+.formulario{
+    position: relative;
+
+    display: inline-block;
+}
+
+.datos{
+    font-size: 2rem;
+    color: black;
+}
+.opcionTalleAdicional{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+.opciones{
+    font-size: medium;
+    color: black;
+}
+/*.tabla{
+    width: 200px;
+    height: 200px;
+    font-size: medium;
+}*/
+
+/*MENU*/
+.linkMenu ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.linkMenu li{
+    display: inline-block;
+}
+.linkMenu a{
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    font-size: 20px;
+    background-color:rgb(255, 242, 231);
+    padding: 2px;
+    color: black;
+
+}
+.linkMenu a:hover{
+    background-color: rgb(185, 115, 115);
+    transition: 0.6s;
+}
+
+FOOTER
+
+.footerContenedor ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.footerContenedor li{
+    display: inline-block;
+}
+
+.footerContenedor a{
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    font-size: 10px;
+    padding: 15px;
+    color: black;
+
+}
+
+.contenedor-footer{
+    background-color:rgb(255, 242, 231);
+    color: black;
+    margin:auto;
+    display: flex;
+    width: 100%;
+    height: 80px;
+
+}
+.columna1{
+    padding: 15px;
+    font-size: 15px;
+}
+.columna1 p{
+    font-size: 10px;
+}
+.columna2{
+    padding: 15px;
+    font-size: 15px;
+}
+.columna3{
+    padding: 15px;
+    font-size: 15px;
+}
+/*-----Anillos.html-----*/
+.gridAnillos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0,2fr 1fr;
+    gap: 35px;
+    grid-template-areas: "rowTitulo rowTitulo"
+                         "row1 row2"
+                         "row3 row4";
+    justify-items: center;
+    align-items: center;
+}
+
+.gridAnillos > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.rowTitulo{
+    grid-area: rowTitulo;
+    grid-column: 1/3;
+    margin-top: 50px;
+}
+.row1{
+    grid-area: row1;
+    gap: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 4px 4px rgb(109, 101, 101);
+}
+
+.row2{
+    grid-area: row2;
+    gap: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 4px 4px rgb(109, 101, 101);
+}
+
+.row3{
+    grid-area: row3;
+    gap: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 4px 4px rgb(109, 101, 101);
+}
+
+.row4{
+    grid-area: row4;
+    gap: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 4px 4px rgb(109, 101, 101);
+}
+
+@media screen and (max-width:768px){
+
+    .gridAnillos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0,2fr 1fr 1fr 1fr 1fr;
+        gap: 35px;
+        grid-template-areas: "rowTitulo"
+                             "row1"
+                             "row2"
+                             "row3"
+                             "row4";
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .gridAnillos > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .rowTitulo{
+        grid-area: rowTitulo;
+        grid-column: 1/2;
+        margin-top: 35px;
+    }
+    .row1{
+        grid-area: row1;
+        grid-column: 1/2;
+        gap: 35px;
+    }
+    
+    .row2{
+        grid-area: row2;
+        grid-column: 1/2;
+        gap: 35px;
+    }
+    
+    .row3{
+        grid-area: row3;
+        grid-column: 1/2;
+        gap: 35px;
+    }
+    
+    .row4{
+        grid-area: row4;
+        grid-column: 1/2;
+        gap: 35px;
+    }
+}
+
+.imgRow{
+    height: 200px;
+    width: 200px;
+    transition: transform 1.8s ease;
+}
+
+.gridAnillos .row1 .imgRow:hover{
+        transform: scale(1.2);
+}
+
+.gridAnillos .row2 .imgRow:hover{
+    transform: scale(1.2);
+}
+
+.gridAnillos .row3 .imgRow:hover{
+    transform: scale(1.2);
+}
+
+.gridAnillos .row4 .imgRow:hover{
+    transform: scale(1.2);
+}
+.bg-fondo{
+    background-color:rgb(207, 158, 158);
+    padding: 20px;
+}
+.efecto{
+    color: white !important;
+    text-shadow: 5px 5px 5px black;
+}
+
+/*.mx-lg-5{
+    margin: 0 90px !important; 
+}*/
+
+
+.gridPulseras{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0,2fr 1fr;
+    gap: 35px;
+    grid-template-areas: "pulseraTitulo pulseraTitulo"
+                         "Pulsera1 Pulsera2"
+                         "Pulsera3 Pulsera4";
+    justify-items: center;
+    align-items: center;
+}
+
+/*----Pulseras.html----*/
+
+.gridColgante{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0,2fr 1fr;
+    gap: 35px;
+    grid-template-areas: "ColganteTitulo ColganteTitulo"
+                         "Colgante1 Colgante2"
+                         "Colgante3 Colgante4";
+    justify-items: center;
+    align-items: center;
+}
+
+.gridPulsera > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.pulseraTitulo{
+    grid-area: pulseraTitulo;
+    grid-column: 1/3;
+    margin-top: 50px;
+}
+
+.Pulsera1{
+    grid-area: Pulsera1;
+    gap: 10px;
+    border: 2px solid black;
+    
+}
+
+.Pulsera2{
+    grid-area: Pulsera2;
+    gap: 10px;
+    border: 2px solid black;
+    
+}
+
+.Pulsera3{
+    grid-area: Pulsera3;
+    gap: 10px;
+    border: 2px solid black;
+}
+
+.Pulsera4{
+    grid-area: Pulsera4;
+    gap: 10px;
+    border: 2px solid black;
+    
+}
+
+.imgPulsera{
+    height: 200px;
+    width: 200px;
+}
+
+/*----Colgant.html----*/
+
+.gridColgante > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.colganteTitulo{
+    grid-area: ColganteTitulo;
+    grid-column: 1/3;
+    margin-top: 50px;
+    
+}
+
+.Colgante1{
+    grid-area: Colgante1;
+    gap: 10px;
+    border: 2px solid black;
+    
+}
+
+.Colgante2{
+    grid-area: Colgante2;
+    gap: 10px;
+    border: 2px solid black;
+    
+}
+
+.Colgante3{
+    grid-area: Colgante3;
+    gap: 10px;
+    border: 2px solid black;
+}
+
+.Colgante4{
+    grid-area: Colgante4;
+    gap: 10px;
+    border: 2px solid black;
+    
+}
+
+.imgColgante{
+    height: 200px;
+    width: 200px;
+}
+

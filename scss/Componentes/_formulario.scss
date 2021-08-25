@@ -1,0 +1,51 @@
+/*VARIABLES LEYENDA*/
+$colorleyenda: #3c6e71;
+$formwidth: 100%;
+$alinacion: center;
+
+
+.legend_estilo{
+    color: $colorleyenda;
+
+
+    &--formato
+        {
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-top: 20px;
+        }
+        
+}
+
+.formulario__formato{
+    width: $formwidth;
+    max-width: 600px;
+    margin: 0 auto;
+    
+    &--flex
+        {
+        display: flex;
+        flex-direction: column;
+        justify-content: $alinacion;
+        align-items: $alinacion;
+        }
+}
+
+.tabla__estilo{
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    &--border
+        {
+            border-color: black;
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 200px;
+            height: 200px;
+            font-size: medium;
+        }
+}
+
+
+
+

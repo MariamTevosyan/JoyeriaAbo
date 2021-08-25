@@ -1,0 +1,48 @@
+$titulo: (oro: #dda15e, brown: #dda15e, azul: #dda15e);
+$fuente: black;
+
+
+@each $letra, $fuente in $titulo {
+        .titulo-#{$letra} {
+            color: $fuente;
+
+        }
+    
+}
+
+/*.titulo__paraffo{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.titulo__paraffo--color{
+    @extend .titulo__paraffo;
+    color: #dda15e;
+    
+}
+
+.titulo__paraffo--color1{
+    @extend .titulo__paraffo;
+    color: #dda15e;
+    
+}
+.titulo__paraffo--color2{
+    @extend .titulo__paraffo;
+    color: #dda15e;
+    
+}*/
+
+$leyenda: 0.1rem;
+
+
+@for $leyenda from 1 through 2{
+    .estiloLeyenda#{$leyenda}{
+        font-size: 3rem - $leyenda !important;
+        text-align: center; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+        color: $fuente;
+    }
+}

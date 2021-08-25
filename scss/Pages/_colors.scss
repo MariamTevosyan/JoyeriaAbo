@@ -1,0 +1,27 @@
+/*VARIABLES*/
+$titulo-fondo: #cb997e;
+$new-arrivals: #e8e8e4;
+$color-footer: #b56576;
+$anchoimagenesabajo: 200px;
+
+.articulo__sub{
+    background-color: $new-arrivals;
+
+
+    &--fonts{
+
+        margin-top: 50px;
+        font: 
+            {
+                size: large;
+                family: 'Courier New', Courier, monospace;
+                weight: bolder;
+        }
+        text: 
+            {
+                align: center;
+            }
+    }    
+}
+
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <title>Contacto - Formulario de contacto</title>
+    <meta name="Description" content="Contactanos y sacate tus dudas">
+    <meta name="keywords" content="CONTACTO, JOYERÍA, PLATA, DISEÑOS, CONFIANZA">
+</head>
+<body>
+    <div class="contactoFooter">
+    <div class="container">
+         
+        <div class="row">
+                        
+            <form id="form1" name="form1" method="POST">
+
+            <!--Carga datos del usuario: Nombre-->
+                
+                <div class="col-md-6 form-group mb-4 mt-5">
+                    <label class="labelStyle" for="txtNombre">Nombre</label>&nbsp;
+                    <input class="form-control" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre" maxlength="20" autocomplete="off" autofocus spellcheck="true" required> 
+                </div>
+
+                <!--Carga datos del usuario: Telefono-->
+                <div class="form-group col-md-6 mb-1">
+                    <label class="labelStyle" for="txtNumber">Telefono</label>&nbsp;
+                    <input class="form-control" type="tel" name="txtNumber" id="txtNumber" placeholder="Ingrese su telefono" max="15" min="8" size="20" autocomplete="off" required> 
+                </div>
+                <br>
+
+                <!--Carga datos del usuario: Sexo-->
+                <div class="form-check">
+                    <label class="labelStyle form-check-label" for="rSexo">Elija el Sexo</label><br>
+                    <input  class="form-check-input" type="radio" name="rSexo" value="M"> "M" <br>
+                    <input  class="form-check-input" type="radio" name="rSexo" value="F"> "F" <br>
+                </div>
+                <br>
+
+                <!--Carga datos del usuario: Gustos/Preferencias-->
+                <div class="form-check">
+                    <label class="labelStyle form-check-label" for="chkjoya">Elija Preferencias</label><br>
+                    <input class="form-check-input" type="checkbox" name="hSimples" value="HS" checked> Retiro por local <br>
+                    <input class="form-check-input" type="checkbox" name="hComplex" value="HC"> Envío a domicilio <br>
+                </div>
+                <br>
+
+                <!--Carga datos del usuario: Provincia-->
+                <div class="form-group">
+                    <label class="labelStyle" for="chkProvincia">Seleccione su Provincia</label><br>
+                    <select class="custom-select custom-select-lg mb-3" name="provincia">
+                            <option value="1">CABA</option>
+                            <option value="2">GBA Sur</option>
+                            <option value="3">GBA Oeste</option>
+                            <option value="4">GBA Norte</option>
+                      </select>
+                    
+                </div>
+                <br>
+
+                <!--Carga datos del usuario: Comentarios-->
+
+                <div id="textArea" class="md-form mb-4 pink-textarea active-pink-textarea col-md-6">
+                    <i class="fas fa-angle-double-right prefix"></i>
+                    <textarea id="formText" class="md-textarea form-control" rows="3" required></textarea>
+                    <label for="labelStyle">Ingrese sus comentarios</label>
+                </div>
+
+
+                <!--Carga datos del usuario: Controles-->
+                <div class="btn-group d-grid gap-3 d-md-flex justify-content-md-center">
+                    <button class="control btn btn-warning btn-lg" type="submit">Enviar</button>
+                    <button class="control btn btn-secondary btn-lg" type="reset">Borrar</button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+</div>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

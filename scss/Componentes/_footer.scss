@@ -1,0 +1,30 @@
+
+
+
+.footer__formato{
+    text-align:center;
+
+    &--color
+    {
+        background: rgb(146, 109, 109);
+    }
+     
+    li 
+    {
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    }
+
+
+}
+
+.footer__letras{
+    font-size: 10px;
+
+    &--color
+    {
+        color: white !important;
+    }
+}

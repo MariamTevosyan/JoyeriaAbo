@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pedido</title>
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Pulseras</title>
+    <meta name="Description" content="Pulseras a medida. Realizamos diseños únicos de plata 9.25 y oro 18k">
+    <meta name="keywords" content="PULSERAS, ORO, PLATA, GANCHO, RODINADO, HOMBRE, MUJER">
+</head>
+<body>
+    <h2 class="italica titulo-azul">Joyería ABO</h2>
+    
+    <div class="linkMenu">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li> 
+            <li><a href="./Anillos.html">Anillos</a></li> 
+            <li><a href="./Colgantes.html">Colgantes</a></li> 
+            <li><a href="./Pulseras.html">Pulseras</a>                 
+        </ul>
+        
+    </div>
+    <div class="pulseraTitulo">
+        <h4 class="subtitulo__formato subtitulo__formato--color" >PULSERAS</h4>
+    </div>
+   <div class="gridPulseras">
+   <div class="Pulsera1">
+       <img class="imgPulsera" src="../Images/bracelet5.jpg" alt="rolo" title="imagen pulsera rolo">
+   </div>
+   <div class="Pulsera2">
+       <img class="imgPulsera" src="../Images/bracelet8.jpg" alt="singapur" title="pulsera singapur">
+    </div>
+    <div class="Pulsera3">
+            <img class="imgPulsera" src="../Images/bracelet6.jpg" alt="grumet" title="pulseragrumet">
+    </div>
+    <div class="Pulsera4">
+            <img class="imgPulsera" src="../Images/bracelet7.jpg" alt="espiga" title="pulsera espiga">
+        </div>
+    </div> <br> <br>
+    <div class="contactoNosotros">
+    <div class="formulario  formulario__formato formulario__formato--flex">
+    <form enctype="application/x-www-form-urlencoded" action="" method="GET">
+        <div class="legend">   
+        <legend class="estiloLeyenda1">Complete el siguiente formulario para que podamos tomar su pedido:</legend>
+        </div> 
+            <div class="datos">
+               <label for="">Nombre</label> <br>
+                <input name="Nombre" type="text" placeholder="Nombre"> <br>
+                <label for="">Apellido</label> <br>
+                <input name="Apellido" type="Apellido" placeholder="Apellido"> <br> 
+                <label for="">Email</label> <br>
+                <input name="Email" type="email" placeholder="Email"> <br>
+                <label for="">Tel</label> <br>
+                <input name="Number" type="number" placeholder="Teléfono"> <br> <br>
+            </div>   
+            <div class="opcionTalleAdicional">
+                <p class="colorAmarillo">Elija una opción</p>
+            </div> 
+            <div class="opciones">
+                <input type="radio" name="tipo" id="tipo1" value="Oro"> <label for="tipo1">Oro</label> <br>
+                <input type="radio" name="tipo" id="tipo2" value="Plata"> <label for="tipo2">Plata</label> <br>
+                <input type="radio" name="tipo" id="tipo3" value="Plata y Oro"> <label for="tipo3">Plata y oro</label> <br> <br>
+            </div>
+                <div class="opcionTalleAdicional">   
+                <p class="colorAmarillo">Talle</p>
+            </div>
+                <select name="" id="">
+                    <option value="">XS</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                    <option value="">XL</option>
+                </select> <br> <br>
+                <div class="opcionTalleAdicional">
+                <p class="colorAmarillo">¿Qué modelo vas a elegir?</p>
+                </div>
+                <div class="opciones">
+                <input type="radio" name="modelo" id="modelo1" value="Rolo"> <label for="tipo1">Rolo</label> <br>
+                <input type="radio" name="modelo" id="modelo2" value="Singapur"> <label for="tipo2">Singapur</label> <br>
+                <input type="radio" name="modelo" id="modelo3" value="Groumet"> <label for="tipo3">Groumet</label> <br>
+                <input type="radio" name="modelo" id="modelo3" value="Espiga"> <label for="tipo4">Espiga</label> <br> <br>
+                <label for="texto" class="colorAmarillo">¿Querés aclarar algo?</label> <br>
+                </div>
+                <textarea name="texto" id="texto" placeholder="Escribe aquí.."> </textarea> <br>
+                <button type="submit">Enviar</button> <br> <br>
+                <p class="negrita">¡Te dejamos una tabla de medidas como referencia!</p>
+        <table border="2" class="tabla">
+            <tr class="colorMarron">
+                <th>Producto</th>
+                <th>Largo</th>
+                <th>Talle</th>
+            </tr>
+            <tr>
+                <td>Pulsera</td>
+                <td>16,5cm</td>
+                <td>XS</td>
+            </tr>
+            <tr>
+                <td>Pulera</td>
+                <td>18cm</td>
+                <td>S</td>
+            </tr>
+            <tr>
+                <td>Pulsera</td>
+                <td>19cm</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>Pulsera</td>
+                <td>20cm</td>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td>Pulsera</td>
+                <td>21cm</td>
+                <td>XL</td>
+            </tr>
+        </table> <br>
+    </form>
+</div>
+</div>
+</body>
+</html>

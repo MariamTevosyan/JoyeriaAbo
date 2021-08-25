@@ -1,0 +1,26 @@
+.encabezado__h1{
+    font-size: 30px;
+    text-decoration: underline;
+
+    &--color
+        {
+        color: brown;    
+    }
+    text: 
+    {
+        align: center;
+    }
+}
+
+.encabezado__p{
+    font-size: 20px;
+
+    &--color
+        {
+        color: #669bbc;    
+    }
+    text: 
+    {
+        align: center;
+    }
+}
