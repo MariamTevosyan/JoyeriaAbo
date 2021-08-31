@@ -1,0 +1,25 @@
+{
+    "name": "joyeriaabo_boostrapthemes",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+      "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "node-sass": "^6.0.1",
+      "nodemon": "^2.0.12"
+    },
+    "description": "Aqui enconrara variedades de diseños exclusivos",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MariamTevosyan/Joyer-a-Abo.git"
+    },
+    "bugs": {
+      "url": "https://github.com/MariamTevosyan/Joyer-a-Abo/issues"
+    },
+    "homepage": "https://github.com/MariamTevosyan/Joyer-a-Abo#readme"
+  }
